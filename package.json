@@ -1,0 +1,24 @@
+{
+  "name": "next.jacobs-alumni.de",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "deploy": "yarn build && push-dir --dir=out --branch=gh-pages"
+  },
+  "dependencies": {
+    "jacobs-alumni-style": "https://github.com/JacobsAlumni/jacobs-alumni-style.git#v1.2.0",
+    "next": "10.0.0",
+    "push-dir": "^0.4.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "sass": "^1.28.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.6",
+    "@types/react": "^16.9.55",
+    "typescript": "^4.0.5"
+  }
+}

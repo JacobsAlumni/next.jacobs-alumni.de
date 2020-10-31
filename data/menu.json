@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Home",
+        "url": "/"
+    },
+    {
+        "title": "Board",
+        "url": "/board/"
+    },
+    {
+        "title": "Homecoming",
+        "url": "/homecoming/"
+    },
+    {
+        "title": "Chapters",
+        "url": "/chapters/"
+    },
+    {
+        "title": "Get involved",
+        "url": "/get-involved/"
+    },
+    {
+        "title": "Donate",
+        "url": "/donate/"
+    },
+    {
+        "title": "Documents",
+        "url": "/documents/"
+    },
+    {
+        "title": "FAQ",
+        "url": "/faq/"
+    },
+    {
+        "title": "Join",
+        "external": true,
+        "url": "https://portal.jacobs-alumni.de/"
+    },
+    {
+        "title": "Alumni Portal",
+        "external": true,
+        "url": "https://portal.jacobs-alumni.de/portal/"
+    }
+]
