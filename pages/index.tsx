@@ -1,13 +1,17 @@
 import * as React from "react";
+import Image from "../components/image";
 import Layout from "../layout/index";
-import Image from 'next/image';
 
 export default class Home extends React.Component {
     render() {
         return <Layout>
 
             <figure className="uk-width-1-1">
-                <Image src="/media/people.jpg" alt="Jacobs Alumni Group Picture from Homecoming 2019" width={4032} height={3024}/>
+                <Image
+                    jpeg={require('../images/people.jpg')}
+                    webp={require('../images/people.jpg?webp')}
+                    alt="Jacobs Alumni Group Picture from Homecoming 2019"
+                />
             </figure>
 
             <div className="uk-clearfix">

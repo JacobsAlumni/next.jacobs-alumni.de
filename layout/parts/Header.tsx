@@ -12,15 +12,12 @@ interface HeaderProps {
 }
 
 class Header extends React.Component<HeaderProps> {
-    componentDidMount() {
-
-    }
     render() {
         const { router: {pathname} } = this.props;
         const curl = pathname.endsWith("/") ? pathname : pathname + "/";
 
         return (<>
-            <div id="offcanvas-menu" uk-offcanvas="">
+            <div id="offcanvas-menu" className="uk-offcan" uk-offcanvas="">
                 <div className="uk-offcanvas-bar uk-flex uk-flex-column">
                     <ul className="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
                         {internalMenu.map(item =>
