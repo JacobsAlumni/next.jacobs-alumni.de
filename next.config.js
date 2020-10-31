@@ -1,4 +1,5 @@
 module.exports = {
+    trailingSlash: true,
     env: {
         siteTitle: "Jacobs Alumni Association",
         siteDescription: "The Jacobs Alumni Association is the growing network of former Jacobs University students and friends.",
