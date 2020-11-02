@@ -17,7 +17,7 @@ class Header extends React.Component<HeaderProps> {
         const curl = pathname.endsWith("/") ? pathname : pathname + "/";
 
         return (<>
-            <div id="offcanvas-menu" className="uk-offcan" uk-offcanvas="">
+            <div id="offcanvas-menu" className="uk-offcanvas" uk-offcanvas="">
                 <div className="uk-offcanvas-bar uk-flex uk-flex-column">
                     <ul className="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
                         {internalMenu.map(item =>
