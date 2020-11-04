@@ -7,7 +7,7 @@ class FooterLegal extends React.Component {
     render() {
         return (<>
             <p>
-                The <a href="https://jacobs-alumni.de/">Jacobs Alumni Association</a> is the growing network of former <a href="https://jacobs-university.de/">Jacobs University</a> students and friends.
+                The <Link href="/"><a>Jacobs Alumni Association</a></Link> is the growing network of former <a href="https://jacobs-university.de/">Jacobs University</a> students and friends.
             </p>
             <p>
                 Copyright © 2017-{year} Jacobs University Alumni Association. All Rights Reserved. <br />
