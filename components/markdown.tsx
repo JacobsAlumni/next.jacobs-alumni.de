@@ -2,10 +2,15 @@ import Link from "next/link";
 import * as React from "react";
 import ReactMarkdown from "react-markdown";
 
-export default class Markdown extends React.Component<{children: string}> {
+interface MarkdownProps {
+    allowDangerousHtml?: boolean;
+    children: string;
+}
+
+export default class Markdown extends React.Component<MarkdownProps> {
     render() {
-        const { children } = this.props;
-        return <ReactMarkdown renderers={{"link": MarkdownLink}}>{children}</ReactMarkdown>
+        const { children, allowDangerousHtml } = this.props;
+        return <ReactMarkdown allowDangerousHtml={allowDangerousHtml} renderers={{"link": MarkdownLink}}>{children}</ReactMarkdown>
     }
 }
 
