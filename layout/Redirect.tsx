@@ -3,27 +3,21 @@ import Head from "next/head";
 import Link from "next/link";
 import * as React from "react";
 
-interface RedirectProps {
-    to: string;
-    router: NextRouter;
+export default function Redirect(to: string): React.ComponentType<{}> {
+    return withRouter(class RedirectPage extends React.Component<{router: NextRouter}> {
+        componentDidMount() {
+            const { router } = this.props;
+            router.replace(to);
+        }
+        render() {
+            return (<>
+                <Head>
+                    <title>Redirecting &hellip;</title>
+                    {/*<meta httpEquiv="refresh" content={`0; url=${to}`} />*/}
+                    <meta name="robots" content="noindex" />
+                </Head>
+                <Link href={to}><a>Click here to be redirected</a></Link>
+            </>);
+        }
+    });
 }
-
-class Redirect extends React.Component<RedirectProps> {
-    componentDidMount() {
-        const { router, to } = this.props;
-        router.replace(to);
-    }
-    render() {
-        const { to } = this.props;
-        return (<>
-            <Head>
-                <title>Redirecting &hellip;</title>
-                {/*<meta httpEquiv="refresh" content={`0; url=${to}`} />*/}
-                <meta name="robots" content="noindex" />
-            </Head>
-            <Link href={to}><a>Click here to be redirected</a></Link>
-        </>);
-    }
-}
-
-export default withRouter(Redirect);
