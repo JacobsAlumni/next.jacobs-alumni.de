@@ -11,9 +11,9 @@ interface DataFile<T> {
     content: string,
 }
 
-export default async function readAllFromPath<T = any>(directory: string): Promise<Array<DataCollectionFile<T>>> {
+export default async function readAllFromPath<T = any>(...paths: string[]): Promise<Array<DataCollectionFile<T>>> {
     const fs = await import("fs");
-    const base = path.join(process.cwd(), directory);
+    const base = paths.reduce((a, b) => path.join(a, b), process.cwd());
     const files = fs.readdirSync(base);
     return files.map((filename) => {
         const filePath = path.join(base, filename);

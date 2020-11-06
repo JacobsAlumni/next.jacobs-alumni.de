@@ -1,6 +1,6 @@
 import { NextRouter, withRouter } from "next/dist/client/router";
 import * as React from "react";
-import menu from "../../../data/menu.json";
+import menu from "../../../data/content/menu.json";
 import Link from "next/link";
 
 const internalMenu = menu.filter(x => !x.external);

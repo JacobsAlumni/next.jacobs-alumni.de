@@ -25,8 +25,8 @@ export default class Faqs extends React.Component<FAQProps> {
 
             <figure id="figure1">
                 <Image
-                        jpeg={require('../images/faq_figure_1.jpg')}
-                        webp={require('../images/faq_figure_1.jpg?webp')}
+                        jpeg={require('../data/images/faq_figure_1.jpg')}
+                        webp={require('../data/images/faq_figure_1.jpg?webp')}
                         alt="Relationship between the Jacobs Alumni Association and other Jacobs University Stakeholders"
                 />
                 <p>Figure 1: Relationship between the Jacobs Alumni Association and other Jacobs University Stakeholders</p>
@@ -62,7 +62,7 @@ class FaqQuestion extends React.Component<{question: DataCollectionFile<FAQQuest
 
 
 export const getStaticProps: GetStaticProps = async (context) => {
-    const questions = (await readAllFromPath<FAQQuestion>("data/faqs")).sort((a, b) => a.preamble.order - b.preamble.order);
+    const questions = (await readAllFromPath<FAQQuestion>("data", "content", "faqs")).sort((a, b) => a.preamble.order - b.preamble.order);
     return {
         props: { questions },
     }

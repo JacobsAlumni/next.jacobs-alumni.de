@@ -8,8 +8,8 @@ export default class Home extends React.Component {
 
             <figure className="uk-width-1-1">
                 <Image
-                    jpeg={require('../images/people.jpg')}
-                    webp={require('../images/people.jpg?webp')}
+                    jpeg={require('../data/images/people.jpg')}
+                    webp={require('../data/images/people.jpg?webp')}
                     alt="Jacobs Alumni Group Picture from Homecoming 2019"
                 />
             </figure>

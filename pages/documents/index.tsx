@@ -60,7 +60,7 @@ class DocumentLink extends React.Component<DocumentVersion> {
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-    const documents = (await import("../../data/documents.json")).default;
+    const documents = (await import("../../data/content/documents.json")).default;
     return {
         props: { documents },
     }
