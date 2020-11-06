@@ -1,6 +1,6 @@
 import * as React from "react";
-import Image from "../components/image";
-import Layout from "../layout/index";
+import Image from "../lib/image";
+import Layout from "../lib/layout/index";
 
 export default class Home extends React.Component {
     render() {

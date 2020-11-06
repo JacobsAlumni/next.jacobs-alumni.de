@@ -1,7 +1,7 @@
 import { GetStaticProps } from "next";
 import Link from "next/link";
 import * as React from "react";
-import Layout from "../../layout";
+import Layout from "../../lib/layout";
 import styles from "./index.module.css";
 
 interface Document {

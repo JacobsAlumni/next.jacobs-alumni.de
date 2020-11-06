@@ -1,6 +1,6 @@
 import * as React from "react";
-import Markdown from "../components/markdown";
-import Layout from "../layout/index";
+import Markdown from "../lib/markdown";
+import Layout from "../lib/layout/index";
 
 const DonateText = `The Jacobs University Bremen Alumni Association e.V. is a non-profit organisation that works on membership fees and donations. 
 The membership costs go towards the administrative costs of the association. 

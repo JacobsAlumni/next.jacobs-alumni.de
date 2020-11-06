@@ -1,6 +1,6 @@
 import Link from "next/link";
 import * as React from "react";
-import Layout from "../../../../layout";
+import Layout from "../../../../lib/layout";
 export default class ByLaws extends React.Component {
     render() {
         return <Layout title="Beitragsordnung (valid from 21st September 2019)">

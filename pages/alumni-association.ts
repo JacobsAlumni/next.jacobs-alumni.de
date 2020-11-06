@@ -1,3 +1,2 @@
-import * as React from "react";
-import Redirect from "../layout/Redirect";
+import Redirect from "../lib/layout/Redirect";
 export default Redirect("/");

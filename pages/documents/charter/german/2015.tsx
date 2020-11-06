@@ -1,6 +1,6 @@
 import Link from "next/link";
 import * as React from "react";
-import Layout from "../../../../layout";
+import Layout from "../../../../lib/layout";
 export default class German extends React.Component {
     render() {
         return <Layout title="Satzung (valid 26th September 2015 - 21st September 2019)">

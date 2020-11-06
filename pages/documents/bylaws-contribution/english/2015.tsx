@@ -1,5 +1,5 @@
 import * as React from "react";
-import Layout from "../../../../layout";
+import Layout from "../../../../lib/layout";
 import Link from "next/link";
 export default class English extends React.Component {
     render() {

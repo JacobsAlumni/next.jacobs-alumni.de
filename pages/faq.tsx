@@ -1,9 +1,9 @@
 import { GetStaticProps } from "next";
 import * as React from "react";
-import Image from "../components/image";
-import Layout from "../layout/index";
-import readAllFromPath, {DataCollectionFile} from '../utils/collection';
-import Markdown from "../components/markdown";
+import readAllFromPath, { DataCollectionFile } from '../lib/collection';
+import Image from "../lib/image";
+import Layout from "../lib/layout/index";
+import Markdown from "../lib/markdown";
 
 interface FAQQuestion {
     order: number,

@@ -1,2 +1,2 @@
-import Redirect from "../layout/Redirect";
+import Redirect from "../lib/layout/Redirect";
 export default Redirect("/documents/privacy/2020/");
