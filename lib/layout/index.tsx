@@ -4,7 +4,7 @@ import Footer from "./parts/Footer";
 import Head from "next/head";
 import styles from "./index.module.css";
 
-interface LayoutProps {
+export interface LayoutProps {
     noCopy?: boolean;
     title?: string;
 }
