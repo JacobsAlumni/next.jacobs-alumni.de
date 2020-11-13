@@ -1,0 +1,21 @@
+.spendowEmbed {
+    overflow: hidden;
+    padding-top: 65%;
+    position: relative;
+}
+
+@media (min-width: 100px) and (max-width: 500px) {
+    .spendowEmbed  {
+        padding-top: 140%;
+    }
+}
+
+.spendowEmbed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+

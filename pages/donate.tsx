@@ -1,6 +1,7 @@
 import * as React from "react";
 import Markdown from "../lib/markdown";
 import Layout from "../lib/layout/index";
+import styles from "./donate.module.css";
 
 const DonateText = `The Jacobs University Bremen Alumni Association e.V. is a non-profit organisation that works on membership fees and donations. 
 The membership costs go towards the administrative costs of the association. 
@@ -16,9 +17,11 @@ You can pick the cause you would like to donate to and that’s exactly where yo
 We are also looking into other causes that you can support as well as new ways for you to make a difference.
 If you have any questions or ideas do not hesitate to reach out via email to [fundraising@jacobs-alumni.de](mailto:fundraising@jacobs-alumni.de). 
 
+<!--
 ### Donate via Spendow
 
-<div class="spendow-i-container2"><iframe src="https://www.spendow.com/JacobsAlumni/shop?embed=1" frameborder="0"></iframe></div><script type="text/javascript" src="https://www.spendow.com/spendow-embed.js"></script>
+<div class="${styles.spendowEmbed}"><iframe src="https://www.spendow.com/JacobsAlumni/shop?embed=1" frameborder="0"></iframe></div>
+-->
 
 ### Donate to the Annual Alumni Scholarship
 
