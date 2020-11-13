@@ -1,9 +1,11 @@
 import { GetStaticProps } from "next";
 import * as React from "react";
 import readAllFromPath, { DataCollectionFile } from '../lib/collection';
-import Image from "../lib/image";
+import Img from "react-optimized-image";
 import Layout from "../lib/layout/index";
 import Markdown from "../lib/markdown";
+
+import Figure1 from '../data/images/faq_figure_1.jpg';
 
 interface FAQQuestion {
     order: number,
@@ -24,11 +26,7 @@ export default class Faqs extends React.Component<FAQProps> {
             {questions.map(q => <FaqQuestion key={q.filename} question={q} />)}
 
             <figure id="figure1">
-                <Image
-                        jpeg={require('../data/images/faq_figure_1.jpg')}
-                        webp={require('../data/images/faq_figure_1.jpg?webp')}
-                        alt="Relationship between the Jacobs Alumni Association and other Jacobs University Stakeholders"
-                />
+                <Img src={Figure1} webp sizes={[750, 900, 1200, 1400, 1600]} alt="Relationship between the Jacobs Alumni Association and other Jacobs University Stakeholders" />
                 <p>Figure 1: Relationship between the Jacobs Alumni Association and other Jacobs University Stakeholders</p>
             </figure>
         </Layout>

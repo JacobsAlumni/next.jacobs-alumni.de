@@ -1,17 +1,14 @@
 import * as React from "react";
-import Image from "../lib/image";
+import Img from "react-optimized-image";
 import Layout from "../lib/layout/index";
+import People from "../data/images/people.jpg";
 
 export default class Home extends React.Component {
     render() {
         return <Layout>
 
             <figure className="uk-width-1-1">
-                <Image
-                    jpeg={require('../data/images/people.jpg')}
-                    webp={require('../data/images/people.jpg?webp')}
-                    alt="Jacobs Alumni Group Picture from Homecoming 2019"
-                />
+                <Img src={People} webp sizes={[750, 900, 1200, 1400, 1600]} alt="Jacobs Alumni Group Picture from Homecoming 2019" />
             </figure>
 
             <div className="uk-clearfix">
