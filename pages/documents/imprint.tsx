@@ -10,8 +10,8 @@ export default class Imprint extends React.Component<{board: BoardComposition}>{
     render() {
         const { board } = this.props;
 
-        const regulars = getRoles().filter(isRegular).map(r => getMemberWithRole(board, r)).filter(x => typeof x !== "undefined");
-        const assessors = getRoles().filter(isAssessor).map(r => getMemberWithRole(board, r)).filter(x => typeof x !== "undefined");
+        const regulars = getRoles().filter(isRegular).map(r => getMemberWithRole(board, r)).filter(x => typeof x !== "undefined").map(x => x!);
+        const assessors = getRoles().filter(isAssessor).map(r => getMemberWithRole(board, r)).filter(x => typeof x !== "undefined").map(x => x!);
 
         return <Layout title="Imprint / Impressum">
             <p>

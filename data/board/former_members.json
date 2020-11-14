@@ -1,0 +1,301 @@
+[
+    {
+      "name": "Alina Degtiarova",
+      "roles": [
+        {
+          "role": "pr",
+          "from": 2014,
+          "to": 2015
+        }
+      ]
+    },
+    {
+      "name": "Andres Alvarado",
+      "roles": [
+        {
+          "role": "president",
+          "from": 2007,
+          "to": 2009
+        }
+      ]
+    },
+    {
+      "name": "Anna Habighorst",
+      "roles": [
+        {
+          "role": "treasurer",
+          "from": 2015,
+          "to": 2015
+        }
+      ]
+    },
+    {
+      "name": "Anna-Lena Schindl",
+      "roles": [
+        {
+          "role": "network-development",
+          "from": 2016,
+          "to": 2019
+        }
+      ]
+    },
+    {
+      "name": "Anne Valtink",
+      "roles": [
+        {
+          "role": "president",
+          "from": 2016,
+          "to": 2019
+        }
+      ]
+    },
+    {
+      "name": "Beenish Waris",
+      "roles": [
+        {
+          "role": "fundraising",
+          "from": 2018,
+          "to": 2019
+        }
+      ]
+    },
+    {
+      "name": "Ciprian Blindu",
+      "roles": [
+        {
+          "role": "treasurer",
+          "from": 2019,
+          "to": 2020
+        }
+      ]
+    },
+    {
+      "name": "Cristina Trifon-Calvopiña",
+      "roles": [
+        {
+          "role": "events",
+          "from": 2019,
+          "to": 2020
+        }
+      ]
+    },
+    {
+      "name": "Daniel Alfonso Garcia",
+      "roles": [
+        {
+          "role": "vice-president",
+          "from": 2014,
+          "to": 2015
+        }
+      ]
+    },
+    {
+      "name": "Devashish Tikekar",
+      "roles": [
+        {
+          "role": "vice-president",
+          "from": 2013,
+          "to": 2013
+        }
+      ]
+    },
+    {
+      "name": "Elena Isac",
+      "roles": [
+        {
+          "role": "special-projects",
+          "from": 2016,
+          "to": 2019
+        }
+      ]
+    },
+    {
+      "name": "Ewa Grzechnik",
+      "roles": [
+        {
+          "role": "treasurer",
+          "from": 2010,
+          "to": 2012
+        }
+      ]
+    },
+    {
+      "name": "Frederique Mittelstaedt",
+      "roles": [
+        {
+          "role": "IT",
+          "from": 2016,
+          "to": 2017
+        }
+      ]
+    },
+    {
+      "name": "Iliana Heucke",
+      "roles": []
+    },
+    {
+      "name": "Irina Shames",
+      "roles": [
+        {
+          "role": "vice-president",
+          "from": 2010,
+          "to": 2010
+        }
+      ]
+    },
+    {
+      "name": "Ivan Mandadzhiev",
+      "roles": [
+        {
+          "role": "pr",
+          "from": 2018,
+          "to": 2018
+        }
+      ]
+    },
+    {
+      "name": "Julia Gyorffy",
+      "roles": [
+        {
+          "role": "special-projects",
+          "from": 2011,
+          "to": 2013
+        }
+      ]
+    },
+    {
+      "name": "Konstantin Mihov",
+      "roles": [
+        {
+          "role": "special-projects",
+          "from": 2011,
+          "to": 2013
+        }
+      ]
+    },
+    {
+      "name": "Lida-Maria Lottko",
+      "roles": [
+        {
+          "role": "pr",
+          "from": 2016,
+          "to": 2017
+        }
+      ]
+    },
+    {
+      "name": "Max Lohmann",
+      "roles": [
+        {
+          "role": "events",
+          "from": 2016,
+          "to": 2019
+        }
+      ]
+    },
+    {
+      "name": "Melanie Wilneder",
+      "roles": [
+        {
+          "role": "secretary",
+          "from": 2007,
+          "to": 2009
+        }
+      ]
+    },
+    {
+      "name": "Mohsin Dar",
+      "roles": [
+        {
+          "role": "fundraising",
+          "from": 2019,
+          "to": 2019
+        }
+      ]
+    },
+    {
+      "name": "Petar Perkovic",
+      "roles": [
+        {
+          "role": "president",
+          "from": 2010,
+          "to": 2012
+        }
+      ]
+    },
+    {
+      "name": "Peter Dabrowski",
+      "roles": [
+        {
+          "role": "vice-president",
+          "from": 2011,
+          "to": 2012
+        },
+        {
+          "role": "president",
+          "from": 2013,
+          "to": 2015
+        }
+      ]
+    },
+    {
+      "name": "Philipp Herzberg",
+      "roles": [
+        {
+          "role": "member-management",
+          "from": 2015,
+          "to": 2016
+        }
+      ]
+    },
+    {
+      "name": "Răzvan Barabaș",
+      "roles": [
+        {
+          "role": "secretary",
+          "from": 2016,
+          "to": 2019
+        }
+      ]
+    },
+    {
+      "name": "Robert Eckhoff",
+      "roles": [
+        {
+          "role": "special-projects",
+          "from": 2007,
+          "to": 2013
+        }
+      ]
+    },
+    {
+      "name": "Raluca Puie",
+      "roles": [
+        {
+          "role": "president",
+          "from": 2004,
+          "to": 2006
+        }
+      ]
+    },
+    {
+      "name": "Stefan Anca",
+      "roles": [
+        {
+          "role": "secretary",
+          "from": 2010,
+          "to": 2015
+        }
+      ]
+    },
+    {
+      "name": "Suna Turhan",
+      "roles": [
+        {
+          "role": "treasurer",
+          "from": 2013,
+          "to": 2014
+        }
+      ]
+    }
+  ]
