@@ -53,7 +53,7 @@ class DocumentLink extends React.Component<DocumentVersion> {
     render() {
         const {href, external, title} = this.props;
         return <>
-            { external ? <a href={href} target="_blank">{title}</a> : <Link href={href}><a>{title}</a></Link>}
+            { external ? <a href={href} target="_blank" rel="noreferrer noopener">{title}</a> : <Link href={href}><a>{title}</a></Link>}
             {" "}
         </>;
     }

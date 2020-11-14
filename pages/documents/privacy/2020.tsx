@@ -179,7 +179,7 @@ export default class English extends React.Component {
             </p>
 
             <p>
-                Please also see the Privacy Policy of Stripe Inc. (<a href="https://stripe.com/de/privacy">https://stripe.com/de/privacy</a>) to read more details on how they ensure that your personal information is treated confidentially.
+                Please also see the Privacy Policy of Stripe Inc. (<a href="https://stripe.com/de/privacy" rel="noreferrer noopener">https://stripe.com/de/privacy</a>) to read more details on how they ensure that your personal information is treated confidentially.
             </p>
 
             <p>
@@ -218,7 +218,7 @@ export default class English extends React.Component {
             <p>
                 You can choose to provide more information directly to Google.
                 Please see their privacy policy (
-                    <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>
+                    <a href="https://policies.google.com/privacy" rel="noreferrer noopener">https://policies.google.com/privacy</a>
                 ) for details.
             </p>
 
@@ -253,7 +253,7 @@ export default class English extends React.Component {
 
             <p>
                 Please also see the Mailchimp Privacy Policy (
-                <a href="https://mailchimp.com/legal/privacy/">https://mailchimp.com/legal/privacy/</a>
+                <a href="https://mailchimp.com/legal/privacy/" rel="noreferrer noopener">https://mailchimp.com/legal/privacy/</a>
                 ) to read more details on how they ensure that your personal information is treated confidentially.
             </p>
 

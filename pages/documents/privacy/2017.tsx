@@ -103,7 +103,7 @@ export default class English extends React.Component {
             <ol>
             <li>Click <a>here</a> to install an opt-out cookie, which instructs Google not to process your data for web analysis purposes in future. Please note that if you opt for this solution, your data will not be processed only as long as the opt-out cookie is saved in your browser.</li>
             <li>You can set your browser software to prevent storage of the cookies used to generate your profile.</li>
-            <li>Click <a href="https://tools.google.com/dlpage/gaoptout" target="_blank">here</a> to install a browser plugin which instructs Google not to process your data for web analysis purposes in future. Please note that the plugin is not compatible with all browsers.</li>
+            <li>Click <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noreferrer noopener">here</a> to install a browser plugin which instructs Google not to process your data for web analysis purposes in future. Please note that the plugin is not compatible with all browsers.</li>
             </ol>
 
             <h3>Cookies</h3>
@@ -220,7 +220,7 @@ export default class English extends React.Component {
             <ol>
             <li>Klicken Sie <a href="">hier</a>, um einen Opt-Out-Cookie zu setzen, der Google anweist, Ihre Daten zukünftig nicht mehr für Zwecke der Webanalyse zu verarbeiten. Bitte beachten Sie, dass bei dieser Lösung die Datenverarbeitung nur so lange nicht erfolgt, wie der Opt-Out-Cookie in Ihrem Browser gespeichert ist.</li>
             <li>Sie können die Speicherung der für die Profilbildung verwendeten Cookies auch durch eine entsprechende Einstellung Ihrer Browser-Software verhindern.</li>
-            <li>Klicken Sie <a href="https://tools.google.com/dlpage/gaoptout?hl=de" target="_blank">hier</a>  um ein Browser-Plugin zu installieren, das Google anweist, Ihre Daten zukünftig nicht mehr für Zwecke der Webanalyse zu verarbeiten. Bitte beachten Sie, dass das Plugin nicht mit allen Browsern kompatibel ist.</li>
+            <li>Klicken Sie <a href="https://tools.google.com/dlpage/gaoptout?hl=de" target="_blank" rel="noreferrer noopener">hier</a>  um ein Browser-Plugin zu installieren, das Google anweist, Ihre Daten zukünftig nicht mehr für Zwecke der Webanalyse zu verarbeiten. Bitte beachten Sie, dass das Plugin nicht mit allen Browsern kompatibel ist.</li>
             </ol>
 
             <h3>Cookies</h3>

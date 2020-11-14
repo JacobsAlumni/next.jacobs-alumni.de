@@ -23,7 +23,7 @@ class MarkdownLink extends React.Component<LinkProps> {
         const {href, children} = this.props;
 
         if (!href.startsWith("/")) {
-            return <a href={href}>{children}</a>;
+            return <a href={href} rel="noreferrer noopener">{children}</a>;
         }
 
         return <Link href={href}><a>{children}</a></Link>;
