@@ -4,6 +4,9 @@ import styles from "./youtube.module.css";
 interface YouTubeEmbedProps {
     id: string;
     title: string;
+    
+    width?: number;
+    height?: number;
 }
 
 export class YouTubeEmbed extends React.Component<YouTubeEmbedProps, {consent: boolean}> {
@@ -29,15 +32,13 @@ class YouTubeConsent extends React.Component<YouTubeConsentProps> {
         this.props.onClick();
     }
     render() {
-        const { title, id } = this.props;
+        const { title, id, width, height } = this.props;
         const href = `https://www.youtube.com/watch?v=${id}`;
-        return <div className={styles.embedContainer}>
+        return <div className={styles.embedContainer} style={{width, height}}>
             <div>
-                <p>
-                    This page embeds a YouTube video titled <a href={href} target="_blank" rel="noreferrer noopener">{title}</a>.
-                    <br />
-                    To show this video you need to accept the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noreferrer noopener">YouTube Terms of Service</a>.
-                </p>
+                This page embeds a YouTube video titled <a href={href} target="_blank" rel="noreferrer noopener">{title}</a>.
+                <br />
+                To show this video you need to accept the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noreferrer noopener">YouTube Terms of Service</a>.
                 <button className="uk-button uk-button-secondary" onClick={this.handleClick}>Agree To YouTube Terms of Service and Show Video</button>
             </div>
         </div>
@@ -46,10 +47,10 @@ class YouTubeConsent extends React.Component<YouTubeConsentProps> {
 
 class YouTubeIframe extends React.Component<YouTubeEmbedProps> {
     render() {
-        const { id } = this.props;
+        const { id, width, height } = this.props;
         const src = `https://www.youtube.com/embed/${id}`;
-        return <div className={styles.embedContainer}>
-            <iframe src={src} frameBorder={0} allowFullScreen></iframe>
+        return <div className={styles.embedContainer} style={{width, height}}>
+            <iframe src={src} frameBorder={0} allowFullScreen style={{width, height}}></iframe>
         </div>;
     }
 }

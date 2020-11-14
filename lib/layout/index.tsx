@@ -6,6 +6,7 @@ import styles from "./index.module.css";
 
 export interface LayoutProps {
     noCopy?: boolean;
+    extraClassName?: string;
     title?: string;
 }
 
@@ -15,7 +16,7 @@ export default class Layout extends React.Component<LayoutProps> {
         event.stopPropagation();
     };
     render() {
-        const { children, title, noCopy } = this.props;
+        const { children, extraClassName, title, noCopy } = this.props;
         return <>
             <Head>
                 <title>{ title ? `${title} - ` : ''}{process.env.siteTitle}</title>
@@ -26,7 +27,7 @@ export default class Layout extends React.Component<LayoutProps> {
             <div className={`uk-container main-container ${noCopy ? styles.noSelect : ""}`} onContextMenu={noCopy ? this.onContextMenu : undefined}>
                 {/*% include cookie.html %*/}
 
-                <article className="uk-article">
+                <article className={`uk-article ${extraClassName || ""}`}>
                     { title && <h1 className="uk-article-title">{ title }</h1>}
                     { children }
                 </article>
