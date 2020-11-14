@@ -18,13 +18,13 @@ export default class Homecoming extends React.Component<{homecomings: Homecoming
         return <Layout title="Homecoming">
             <figure className="uk-grid uk-grid-small uk-child-width-1-3" uk-grid="">
                 <div>
-                    <Img webp src={HomecomingHeader1} />
+                    <Img src={HomecomingHeader1} />
                 </div>
                 <div>
-                    <Img webp src={HomecomingHeader2} />
+                    <Img src={HomecomingHeader2} />
                 </div>
                 <div>
-                    <Img webp src={HomecomingHeader3} />
+                    <Img src={HomecomingHeader3} />
                 </div>
             </figure>
 

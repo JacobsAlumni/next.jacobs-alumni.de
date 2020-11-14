@@ -32,10 +32,10 @@ export default class Homecoming2020 extends React.Component {
                     </p>
                     </div>
                     <div className="uk-width-1-3@m">
-                        <Img src={Scholarship1} webp />
+                        <Img src={Scholarship1} />
                     </div>
                     <div className="uk-width-1-3@m">
-                        <Img src={Scholarship2} webp />
+                        <Img src={Scholarship2} />
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@ export default class Homecoming2020 extends React.Component {
                     </div>
                     <div className="uk-width-1-4@m">
                         <figure>
-                            <Img src={Piece1} webp width={640} height={335} alt="Art Piece #1 by Zhanerke Arstanbay" />
+                            <Img src={Piece1} width={640} height={335} alt="Art Piece #1 by Zhanerke Arstanbay" />
                             <figcaption className="uk-overlay-panel">
                                 <b>Art Piece #1</b> by <b>Zhanerke Arstanbay</b>
                             </figcaption>
@@ -95,7 +95,7 @@ export default class Homecoming2020 extends React.Component {
                     </div>
                     <div className="uk-width-1-4@m">
                     <figure>
-                        <Img src={Piece2} webp width={640} height={335} alt="Art Piece #2 by Zhanerke Arstanbay" />
+                        <Img src={Piece2} width={640} height={335} alt="Art Piece #2 by Zhanerke Arstanbay" />
                         <figcaption className="uk-overlay-panel">
                             <b>Art Piece #2</b> by <b>Zhanerke Arstanbay</b>
                         </figcaption>
@@ -103,7 +103,7 @@ export default class Homecoming2020 extends React.Component {
                     </div>
                     <div className="uk-width-1-4@m">
                     <figure>
-                        <Img src={Piece3} webp width={640} height={335} alt="Art Piece #3 by Zhanerke Arstanbay" />
+                        <Img src={Piece3} width={640} height={335} alt="Art Piece #3 by Zhanerke Arstanbay" />
                         <figcaption className="uk-overlay-panel">
                             <b>Art Piece #3</b> by <b>Zhanerke Arstanbay</b>
                         </figcaption>
@@ -121,7 +121,7 @@ export default class Homecoming2020 extends React.Component {
                     </div>
                     <div className="uk-width-1-3@m">
                         <figure>
-                            <Img src={Piece4} webp width={453} height={453} alt="Art Piece #4 by Joana Petushi" />
+                            <Img src={Piece4} width={453} height={453} alt="Art Piece #4 by Joana Petushi" />
                             <figcaption className="uk-overlay-panel">
                                 <b>Art Piece #4</b> by <b>Joana Petushi</b>
                             </figcaption>
@@ -142,7 +142,7 @@ export default class Homecoming2020 extends React.Component {
                     </div>
                     <div className="uk-width-1-3@m">
                         <figure>
-                            <Img src={Piece5} webp width={320} height={453} alt="Art Piece #5 by Adriana Margarita Martinez" />
+                            <Img src={Piece5} width={320} height={453} alt="Art Piece #5 by Adriana Margarita Martinez" />
                             <figcaption>
                                 <b>Art Piece #5</b> by <b>Adriana Margarita Martinez</b>
                             </figcaption>
@@ -161,7 +161,7 @@ export default class Homecoming2020 extends React.Component {
                     </div>
                     <div className="uk-width-1-3@m">
                     <figure>
-                        <Img src={Piece6} webp width={320} height={453} alt="Art Piece #6 by Predrag Tapavicki" />
+                        <Img src={Piece6} width={320} height={453} alt="Art Piece #6 by Predrag Tapavicki" />
                         <figcaption>
                             <b>Art Piece #6</b> by <b>Predrag Tapavicki</b>
                         </figcaption>
@@ -195,7 +195,7 @@ export default class Homecoming2020 extends React.Component {
                     </div>
                     <div className="uk-width-1-3@m">
                         <figure>
-                            <Img src={Piece7} webp width={320} height={453} alt="Art Piece #7 by Nhi Dang Uyen Nguyen" />
+                            <Img src={Piece7} width={320} height={453} alt="Art Piece #7 by Nhi Dang Uyen Nguyen" />
                             <figcaption>
                                 <b>Art Piece #7</b> by <b>Nhi Dang Uyen Nguyen</b>
                             </figcaption>

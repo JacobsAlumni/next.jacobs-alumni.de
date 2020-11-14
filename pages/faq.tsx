@@ -26,7 +26,7 @@ export default class Faqs extends React.Component<FAQProps> {
             {questions.map(q => <FaqQuestion key={q.filename} question={q} />)}
 
             <figure id="figure1">
-                <Img src={Figure1} webp sizes={[750, 900, 1200, 1400, 1600]} alt="Relationship between the Jacobs Alumni Association and other Jacobs University Stakeholders" />
+                <Img src={Figure1} sizes={[750, 900, 1200, 1400, 1600]} alt="Relationship between the Jacobs Alumni Association and other Jacobs University Stakeholders" />
                 <p>Figure 1: Relationship between the Jacobs Alumni Association and other Jacobs University Stakeholders</p>
             </figure>
         </Layout>

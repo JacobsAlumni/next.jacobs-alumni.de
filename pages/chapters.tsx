@@ -17,7 +17,7 @@ export default class Chapters extends React.Component<{chapters: ChapterData}> {
                 <YouTubeEmbed id="yDAXfMEBrnI" title="Jacobs Alumni Local Chapters" />
             </div>
             <p>
-                <Img src={Signs} webp sizes={[250]} width={250} height={375} className="uk-align-right" />
+                <Img src={Signs} sizes={[250]} width={250} height={375} className="uk-align-right" />
                 Alumni chapters are groups of alumni who share a common ground and come together to foster the Jacobs network.
                 As such, chapters form the hubs of the alumni network where alumni not only stay in touch, but also forge new connections.
                 They are about keeping the spirit of our University alive by supporting each other a life long wherever we are on the globe.
