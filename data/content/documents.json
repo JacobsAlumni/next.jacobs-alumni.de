@@ -70,8 +70,18 @@
         "lastInGroup": true
     },
     {
+        "title": "Privacy Policy 2021",
+        "description": "The Privacy Policy of the Association, valid from the 1st of January 2021 onwards. ",
+        "versions": [
+            {
+                "href": "/documents/privacy/2021/",
+                "title": "English"
+            }
+        ]
+    },
+    {
         "title": "Privacy Policy 2020",
-        "description": "The Privacy Policy of the Association, valid from 15th August 2020 onwards. ",
+        "description": "The Privacy Policy of the Association, valid from 15th August 2020 until the end of 31st December 2020. ",
         "versions": [
             {
                 "href": "/documents/privacy/2020/",
