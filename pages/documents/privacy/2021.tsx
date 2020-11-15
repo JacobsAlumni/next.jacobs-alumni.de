@@ -1,0 +1,405 @@
+import * as React from "react";
+import Layout from "../../../lib/layout";
+import Link from "next/link";
+
+export default class English extends React.Component {
+    render() {
+        return <Layout title="Privacy Policy (valid from 15th August 2020)" noCopy>
+            <div className="uk-alert-success" uk-alert="">
+                <a className="uk-alert-close" uk-close=""></a>
+                <p>
+                    This policy comes into effect on the 1st of January 2021.
+                    Please see <Link href="/documents/privacy/2019/"><a>the privacy policy valid before this date</a></Link>.
+                </p>
+            </div>
+
+            <p>
+                Dear Visitors, we thank you for visiting us.
+                To ensure that you feel safe and comfortable when browsing our website(s), we would like to inform you about how we handle your personal data.
+                This Privacy Policy describes how we collect, use, process, and disclose your information, including personal information, in conjunction with your access to and use of our website.
+            </p>
+
+            <h3>Data Controller</h3>
+            <p>
+                When this policy mentions &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our,&rdquo; it refers to Jacobs University Bremen Alumni Association e.V., Campus Ring 1, 28759 Bremen, Germany, which is responsible for your information under this Privacy Policy (the &ldquo;Data Controller&rdquo;).
+            </p>
+
+            <h3>Storing of IP Addresses</h3>
+            <p>
+                Protecting your privacy is very important to us.
+                We use information that we receive and store during your visit to our website exclusively for internal purposes and to improve the design of the website, including sub-pages. If necessary for the purpose of defending against attacks that impair the functionality of our website (hacker attacks, malware, denial of service attacks, spam), we may access your computer&rsquo;s IP address for this purpose alone, which is stored by our telecommunications provider as a security measure for a period of seven days.
+                After this period has elapsed, we will either delete or anonymize the IP address.
+                The legal basis for this processing is Art. 6(1)(f) of the GDPR.
+            </p>
+
+            <h3>Usage Information</h3>
+
+            <p>
+                When you visit our website, we temporarily store usage information on our web server for statistical purposes in the form of a log in order to improve the quality of our website.
+                This data record consists of:
+            </p>
+
+            <ul>
+                <li>The page from which the file was requested</li>
+                <li>The name of the file</li>
+                <li>The date and time the file was accessed</li>
+                <li>The quantity of data transferred</li>
+                <li>The status of access (file transferred, file not found)</li>
+                <li>The IP address of the computer accessing the file</li>
+            </ul>
+            <p>
+                We use this information to enable access to our website, to control and administer our systems, and to improve the design of our website.
+                The data stored is stored in anonymized form.
+                This means it is not possible to create personal user profiles based on this information.
+                Data about individuals or their individual behavior is not collected.
+            </p>
+
+            <h3>User accounts</h3>
+            <p>
+                To become a member of the association, it is necessary to register a user account.
+                Only registered users have access to all the functions available on our website.
+                To set up a user account, you can supply the following optional or mandatory data:
+            </p>
+
+            <ul>
+                <li>Your full name</li>
+                <li>E-mail address</li>
+                <li>Phone Number</li>
+                <li>Demographic Information, i.e.</li>
+                <li>
+                    <ul>
+                        <li>Gender</li>
+                        <li>Date of birth</li>
+                        <li>Nationality</li>
+                    </ul>
+                </li>
+                <li>User category, i.e. if you are a</li>
+                <li>
+                    <ul>
+                        <li>Regular Alumni (former student)</li>
+                        <li>Faculty or Staff Member</li>
+                        <li>Friend Of The Association</li>
+                    </ul>
+                </li>
+                <li>Membership Details, i.e.</li>
+                <li>
+                    <ul>
+                        <li>Username and Password</li>
+                        <li>@jacobs-alumni.de E-Mail Address</li>
+                        <li>Selected Membership tier, one of</li>
+                        <li>
+                            <ul>
+                                <li>Contributor</li>
+                                <li>Patron</li>
+                                <li>Starter</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Postal Address</li>
+                <li>Social Media and related URLs, i.e</li>
+                <li>
+                    <ul>
+                        <li>Facebook URL</li>
+                        <li>Linkedin URL</li>
+                        <li>Twitter URL</li>
+                        <li>Instagram URL</li>
+                        <li>Homepage URL</li>
+                    </ul>
+                </li>
+
+                <li>Jacobs University College Affiliation</li>
+                <li>Degree achieved at Jacobs, i.e.</li>
+                <li>
+                    <ul>
+                        <li>Type of Degree</li>
+                        <li>Graduation Class</li>
+                        <li>Graduation Major</li>
+                        <li>Comments</li>
+                    </ul>
+                </li>
+                <li>Employment Information, i.e.</li>
+                <li>
+                    <ul>
+                        <li>Employer</li>
+                        <li>Position</li>
+                        <li>Industry</li>
+                        <li>Job Title</li>
+                    </ul>
+                </li>
+                <li>Degrees achieved at other institutions</li>
+                <li>Languages you speak</li>
+                <li>Programming Languages you know</li>
+                <li>Areas of Interest</li>
+                <li>Payment Information, i.e.</li>
+                <li>
+                    <ul>
+                        <li>Credit Card Number, expiration date and CVC or;</li>
+                        <li>SEPA Bank Account Number (BIC) And Bank Account Owner</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <p>
+                We may decide on a case-by-case basis which exact fields are mandatory and optional.
+                With the exception of your payment information and password, we store this data inside our membership database.
+            </p>
+
+            <p>
+                We use this data to provide you with access to the exclusive contents and functions of the restricted access areas, to ensure that you can be found through the website&rsquo;s search function by other registered users (only alumni graduates, not associate members), using your work and home location (geolocation) if necessary, to contact you for networking purposes and enable other registered users (graduates) to contact you for that purpose, to inform you by e-mail, post or phone about events, fundraising campaigns and other subjects relating to Jacobs University Bremen and to settle accounts for the applicable membership fees.<br /><br />We also use the above data for anonymous surveys, for example to enable us to create general profiles of the professional status or geographical location of our alumni.
+            </p>
+
+            <h3>Data Transfers to Third Parties</h3>
+            <p>
+                We transfer selected personal information for specific purposes to third parties, as described in detail in the following.
+                We do not transfer any other of your personal data to third parties without your express consent.
+            </p>
+
+            <h3>Data Processing by Jacobs University</h3>
+            <p>
+                With your consent, we forward the data you have supplied to set up your user account to Jacobs University Bremen, with the exception of your payment data.
+                Jacobs University Bremen uses your data within the scope of the consent you have granted
+            </p>
+
+            <ul>
+                <li>to contact you on their own for networking purposes; and</li>
+                <li>and to inform you by e-mail or post about events, surveys, fundraising campaigns and other subjects relating to Jacobs University Bremen.</li>
+            </ul>
+
+            <p>
+                Only the following departments have access to your data: Business Solutions, Student Marketing & Recruitment, Academic Services, Academic Operations, Corporate Services, Campus Operations and Corporate Staff.
+                You are explicitly informed that your data is not intended for use by the Student Financial Services department.
+                Neither we nor Jacobs University Bremen will disclose your data to any other third parties.
+            </p>
+
+
+            <h3>Data Processing by Stripe Inc.</h3>
+            <p>
+                To enable processing of membership fess, we transfer a very limited set of information to our payment provider Stripe, Inc. 
+                This information is used to process membership fees and to issue donation receipts.
+            </p>
+
+
+
+
+            <h4>Data Transferred</h4>
+            <p>
+                The exact information transmitted can vary on a case-by-case basis, however we transfer at most the following information about you:
+            </p>
+
+            <ul>
+                <li>your full name, so that Stripe can identify who you are;</li>
+                <li>your existing email address, so that Stripe can send you a receipt and contact you in case of problems;</li>
+                <li>your selected membership tier, so that Stripe knows which amount to charge you for;</li>
+                <li>the date and time of your membership, so that Stripe knows when to bill you;</li>
+                <li>your selected payment method and payment details, so that Stripe knows how to charge you. This data includes</li>
+                <li>
+                    <ul>
+                        <li>your credit card details, i.e. your credit card number, expiration date and optionally your CVV (depending on the card type); or</li>
+                        <li>your SEPA bank account details, i.e. your bank account number (IBAN) and the owner of your Bank account.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <p>
+                The payment details are submitted directly from your browser to Stripe Inc. and the payment details are never stored by Jacobs University Alumni.
+            </p>
+
+            <h4>Data Received</h4>
+            <p>
+                To supply you with donation receipts in a timely manner, we receive and store a limited set of information from Stripe, Inc.
+                This information is used to determine that a payment was completed in order to issue donation receipts.
+            </p>
+
+            <p>
+                The following received payment details are stored by Jacobs University Alumni:
+            </p>
+
+            <ul>
+                <li>a unique customer number, so that we know who made a payment;</li>
+                <li>the time the payment was made, so we know what date to print on the receipt;</li>
+                <li>the amount paid, so we know what amount to print on the receipt;</li>
+                <li>the status of the payment, so we can determine if a payment was successful;</li>
+                <li>the currency that the payment was made in, so we can print the correct currency on the receipt;</li>
+            </ul>
+
+            <p>
+                Please also see the Privacy Policy of Stripe Inc. (
+                    <a href="https://stripe.com/de/privacy">https://stripe.com/de/privacy</a>
+                ) to read more details on how they ensure that your personal information is treated confidentially.
+            </p>
+
+            <h3>Data Transfer to Google</h3>
+            <p>
+                To provide you with an jacobs-alumni.de E-Mail address after you sign up, we transfer a limited set of information to Google.
+                This information can vary on a case-by-case basis, however it never includes anything other than the following:
+            </p>
+
+            <ul>
+                <li>your full name;</li>
+                <li>your selected username; and</li>
+                <li>your existing email address and phone number, so that Google can send you an email with access details to your new E-Mail account and so that you can reset the access details to it later.</li>
+            </ul>
+            <p>
+                You can choose to provide more information directly to Google.
+                Please see their privacy policy (
+                    <a href="https://policies.google.com/privacy" rel="noreferrer noopener">https://policies.google.com/privacy</a>
+                ) for details.
+            </p>
+
+            <h3>Cookies</h3>
+
+            <p>
+                We use cookies on our website.
+                Cookies are small text files that can be stored and accessed on your device.
+                A distinction is made between session cookies, which are deleted as soon as you close your browser, and permanent cookies, which are stored after each individual session. Cookies may contain data that make it possible to recognize the device used to access our site across multiple visits.
+                In some cases, however, cookies only contain information related to certain settings that are not personally identifiable.
+            </p>
+
+            <p>
+                We use both session cookies and permanent cookies on our website.
+                We use session cookies to enable essential features on our website, such as logging into the portal.
+                We do not directly use permanent cookies, however both Google and Stripe may use them for security features.
+                See the sections on Data Transfer to Google and Stripe respectively.
+            </p>
+
+            <p>
+                You can configure your browser so that it informs you when cookies are being saved, thereby making the use of cookies more transparent.
+                You can also delete cookies at any time via the corresponding browser setting and prevent new cookies from being saved.
+                Please note that if you disable the use of cookies, our website may not display properly and some of its features may no longer be supported.
+            </p>
+
+            <h3>Data Transfer to The Rocket Science Group (Mailchimp)</h3>
+
+            <p>
+                To enable us to send newsletters more efficiently, we make use of Mailchimp, provided by the The Rocket Science Group.
+                In order to do so, we transfer certain personal data to this service provider.
+            </p>
+
+            <p>
+                Please also see the Mailchimp Privacy Policy (
+                <a href="https://mailchimp.com/legal/privacy/" rel="noreferrer noopener">https://mailchimp.com/legal/privacy/</a>
+                ) to read more details on how they ensure that your personal information is treated confidentially.
+            </p>
+
+            <p>
+                The exact information transmitted can vary on a case-by-case basis, however we transfer at most the following information about you:
+            </p>
+
+            <ul>
+                <li>Your full name, so that Mailchimp can address you in emails;</li>
+                <li>Your @jacobs-alumni.de email address, so that Mailchimp can send you emails; </li>
+                <li>Your birthday;</li>
+                <li>Your graduation year;</li>
+                <li>Your major;</li>
+                <li>Your current city; and </li>
+                <li>Any alumni projects (such as the mentoring program) that you are involved in. </li>
+            </ul>
+
+            <p>
+                Unless mentioned otherwise, Mailchimp uses this data to send you emails that are relevant to you.
+</p>
+
+            <h3>Your Rights as a Website User</h3>
+            <p>
+                When it comes to processing your personal data, the GDPR grants you certain rights as a website user:
+</p>
+
+            <ol start={1}>
+                <li>Right of Access (Art. 15 of the GDPR):</li>
+            </ol>
+            <p>
+                You have the right to request confirmation as to whether personal data concerning you is being processed;
+                where this is the case, you have a right of access to this personal data and to the information specified in Article 15 of the GDPR.
+
+            </p>
+
+            <ol start={2}>
+                <li>Right to Rectification and Right to Erasure (Art. 16 and 17 of the GDPR):</li>
+            </ol>
+            <p>
+                You have the right to immediately request the rectification of incorrect personal data concerning you and, if necessary, the completion of incomplete personal data.
+            </p>
+            <p>
+                You also have the right to request that personal data concerning you be erased immediately if one of the reasons listed in Art. 17 of the GDPR applies in detail, e.g. if the data is no longer required for the purposes for which it was collected.
+            </p>
+
+            <ol start={3}>
+                <li>Right to Restriction of Processing (Art. 18 of the GDPR):</li>
+            </ol>
+            <p>
+                You have the right to request a restriction of processing for the duration of a review if any of the conditions specified in Art. 18 of the GDPR have been met, e.g. if you have lodged an objection to the processing.
+            </p>
+
+            <ol start={4}>
+                <li>Right to Data Portability (Art. 20 of the GDPR):</li>
+            </ol>
+            <p>
+                In certain cases (which are outlined in detail in Article 20 of the GDPR), you have the right to obtain from us your personal data in a structured, standard, machine-readable format or to request the transfer of such data to a third party.
+            </p>
+
+            <ol start={5}>
+                <li>Right to Object (Art. 21 of the GDPR):</li>
+            </ol>
+            <p>
+                If data is collected on the basis of Art. 6(1)(f) of the GDPR (data processing on the grounds of legitimate interests), you have the right to object to the processing at any time for reasons arising from your particular situation. If you make such an objection, we will no longer process your personal data unless we can demonstrate compelling legitimate grounds for the processing which override your interests, rights, and freedoms or for the establishment, exercise, or defense of legal claims.
+            </p>
+
+            <ol start={6}>
+                <li>Right to Lodge a Complaint with a Supervisory Authority:</li>
+            </ol>
+            <p>
+                In accordance with Art. 77 of the GDPR, you have the right to lodge a complaint with a supervisory authority if you believe that the processing of your personal data violates data protection regulations. This right to lodge a complaint may particularly be exercised before a supervisory authority in the EU member state where you reside, work, or where you suspect that your rights have been infringed.
+            </p>
+
+            <h3>Future Changes To These Policies</h3>
+            <p>
+                In the future, we may need to change these policies.
+                These may be, but are not limited to, the following:
+            </p>
+
+            <ul>
+                <li>we may decide to add a new payment method;</li>
+                <li>we may be required to do so by applicable law or;</li>
+                <li>we may decide to offer an additional service.</li>
+            </ul>
+
+            <p>
+                Should changes to these terms occur, where possible, we will contact you with a copy of the new terms at least a month in advance of the new terms and conditions taking effect.
+                We will contact you by either sending an email to your @jacobs-alumni.de email address, or by sending you a letter to your postal address.
+            </p>
+
+            <p>
+                Continuing to use any of our services, or services provided through us, (e.g. the membership portal, or your @jacobs-alumni.de account) past the time of the new terms and conditions taking effect, constitutes agreement to the new terms and conditions.
+            </p>
+
+            <p>
+                If you decide to not accept the new terms, you should contact us (via email to support@jacobs-alumni.de) to close your account and delete all personal information as far as possible.
+            </p>
+
+            <h3>Severability Clause</h3>
+
+            <p>If a provision of this policy is or becomes illegal, invalid or unenforceable in any jurisdiction, that shall not affect: </p>
+
+            <ul>
+                <li>the validity or enforceability in that jurisdiction of any other provision of this Agreement; or</li>
+                <li>the validity or enforceability in other jurisdictions of that or any other provision of this Agreement.</li>
+            </ul>
+
+            <h3>Data Protection Officer</h3>
+
+            <p>
+                Our data protection officer will be happy to provide you with information or suggestions on the topic of data protection:
+            </p>
+            <p>
+                Stefan Rustler<br />
+                Am Sonnenhang 13<br />
+                97535 Wülfershausen<br />
+                Germany<br />
+                <br />
+                Email: srustler@jacobs-alumni.de<br />
+                Phone: +41-792648141
+            </p>
+        </Layout>
+    }
+}
