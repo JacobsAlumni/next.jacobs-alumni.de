@@ -1,5 +1,6 @@
 module.exports = {
     default: {
-      webp: true,
+      // webp: true,
+      original: true,
     }
 };
