@@ -2,6 +2,7 @@
     {
       "name": "Stefan Rustler",
       "role": "president",
+      "image": true,
       "meta": {
         "email": "srustler@jacobs-alumni.de",
         "facebook": "https://www.facebook.com/stefan.rustler",
@@ -13,6 +14,7 @@
     {
       "name": "Stefan Kuzmanovski",
       "role": "vice-president",
+      "image": true,
       "meta": {
         "email": "skuzmanovski@jacobs-alumni.de",
         "facebook": "https://www.facebook.com/stefan.kuzmanovski92",
@@ -23,6 +25,7 @@
     {
       "name": "Muhammad Azka",
       "role": "secretary",
+      "image": true,
       "meta": {
         "email": "mazka@jacobs-alumni.de"
       },
@@ -31,6 +34,7 @@
     {
       "name": "Sharon Min",
       "role": "network-development",
+      "image": true,
       "meta": {
         "email": "SMin@jacobs-alumni.de"
       },
@@ -39,6 +43,7 @@
     {
       "name": "Leonhard Kuboschek",
       "role": "treasurer",
+      "image": true,
       "meta": {
         "email": "leo@jacobs-alumni.de",
         "instagram": "https://www.instagram.com/myinstaisleo",
@@ -51,6 +56,7 @@
     {
       "name": "Albena Bogoeva",
       "role": "pr",
+      "image": true,
       "meta": {
         "email": "abogoeva@jacobs-alumni.de",
         "facebook": "https://www.facebook.com/albenab",
@@ -61,6 +67,7 @@
     {
       "name": "Nouria Jantz-Naeem",
       "role": "fundraising",
+      "image": true,
       "meta": {
         "email": "njantz-naeem@jacobs-alumni.de"
       },
@@ -69,6 +76,7 @@
     {
       "name": "Franziska Pohle",
       "role": "member-management",
+      "image": true,
       "meta": {
         "email": "fpohle@jacobs-alumni.de"
       },
@@ -77,6 +85,7 @@
     {
       "name": "Tom Wiesing",
       "role": "it",
+      "image": true,
       "meta": {
         "email": "twiesing@jacobs-alumni.de",
         "facebook": "https://www.facebook.com/tom.wiesing",

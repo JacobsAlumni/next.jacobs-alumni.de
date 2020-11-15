@@ -1,12 +1,12 @@
 import * as React from "react";
 import Layout from "../../lib/layout/index";
 
-import {BoardComposition, getComposition, getMemberWithRole} from "../../data/board";
+import {BoardMember, getCompositionAt, getMemberWithRole, getTimePoints} from "../../data/board";
 import { getRoles, isRegular, isAssessor, englishNames, germanNames } from "../../data/board/roles";
 import { GetStaticProps } from "next";
 
 
-export default class Imprint extends React.Component<{board: BoardComposition}>{
+export default class Imprint extends React.Component<{board: Array<BoardMember>}>{
     render() {
         const { board } = this.props;
 
@@ -75,7 +75,8 @@ export default class Imprint extends React.Component<{board: BoardComposition}>{
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-    const board: BoardComposition = getComposition();
+    const points = await getTimePoints();
+    const board = await getCompositionAt(points[0]);
     return {
         props: { board },
     }

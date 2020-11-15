@@ -1,29 +1,52 @@
 import { GetStaticProps } from "next";
+import Link from "next/link";
 import * as React from "react";
 import Img from "react-optimized-image";
-import { BoardComposition, FormerBoardMember, getAdvisors, getComposition, getFormerMembers, MemberToPerson, Person } from "../data/board";
-import { englishNames } from "../data/board/roles";
-import Layout from "../lib/layout/index";
-import Markdown from "../lib/markdown";
+import { formatTimePoint, FormerBoardMember, getAdvisorsAt, getCompositionAt, getFormerMembersAt, BoardMemberToPerson, Person, BoardMember, Advisor, TimePoint, getTimePoints, getImageBaseName } from "../../data/board";
+import { englishNames } from "../../data/board/roles";
+import Layout from "../../lib/layout/index";
+import Markdown from "../../lib/markdown";
 import styles from "./board.module.css";
 
-export default class Board extends React.Component<{board: BoardComposition, advisors: Array<Person>, formers : Array<FormerBoardMember>}>{
+interface BoardProps {
+    instance: TimePoint,
+    up_to_date_instance: TimePoint,
+    next_instance: TimePoint,
+    prev_instance: TimePoint,
+
+    board: Array<BoardMember>,
+    advisors: Array<Advisor>,
+    formers: Array<FormerBoardMember>,
+}
+
+
+export default class Board extends React.Component<BoardProps>{
     render() {
-        const { board, advisors, formers } = this.props;
+        const { board, advisors, formers, up_to_date_instance, prev_instance, instance, next_instance } = this.props;
         const formerMembers = formers.sort(({name: aname}, {name: bname}) => {
             if (aname < bname) return -1;
             if (aname > bname) return 1;
             return 0;
         });
 
-        return <Layout title="Board">
+        const is_current = up_to_date_instance === instance;
+        const title = is_current ? "Board" : `Board from ${formatTimePoint(instance)} to ${formatTimePoint(next_instance)}`;
+        const verbs = is_current ? "is" : `from ${formatTimePoint(instance)} to ${formatTimePoint(next_instance)} was`;
+
+        return <Layout title={title}>
+            <div className="uk-button-group">
+                {next_instance && <Link href={next_instance === up_to_date_instance ? `/board/` : `/board/${next_instance}/`}><a className="uk-button uk-button-default" title="Next Board Composition">&laquo; {formatTimePoint(next_instance)}</a></Link>}
+                <button className="uk-button uk-button-default" disabled>{formatTimePoint(instance)}</button>
+                {prev_instance && <Link href={`/board/${prev_instance}/`}><a className="uk-button uk-button-default" title="Previous Board Composition">{formatTimePoint(prev_instance)} &raquo;</a></Link>}
+            </div>
+            
             <p className="uk-text-lead">
-                The board is composed of {board.length} members and {advisors.length} advisors.
+                The board {verbs} composed of {board.length} members and {advisors.length} advisors.
                 The board acts as a bridge between the university, alumni and our community to facilitate networking and influence in the decision making process at Jacobs.
             </p>
 
             <div className="uk-grid uk-grid-small uk-child-width-1-1@s uk-child-width-1-3@m " uk-grid="">
-                {board.map(a => <PersonCard person={MemberToPerson(a)} key={a.name} />)}
+                {board.map(a => <PersonCard person={BoardMemberToPerson(a)} key={a.name} />)}
             </div>
 
             <h2>Associate Advisors to the Board</h2>
@@ -44,15 +67,15 @@ export default class Board extends React.Component<{board: BoardComposition, adv
 class PersonCard extends React.Component<{person: Person}> {
     render() {
         const { person } = this.props;
-        const { name, role, description, meta } = person;
+        const { name, role, description, socials: meta } = person;
         const { email, facebook, twitter, instagram, linkedin, github } = meta || {};
 
-        const base = PersonCard.getBaseName(person);
+        const base = getImageBaseName(person);
 
         return <div>
             <div className="uk-card uk-card-default">
                 <div className="uk-card-media-top square-box">
-                    <Img className={`uk-width-1-1 square-content ${styles.personImage}`} alt={name} src={require(`../data/images/people/${base}.jpg`)} />
+                    {base && <Img alt={`Photo of ${name}`} className={`uk-width-1-1 square-content ${styles.personImage}`} src={require(`../../data/images/people/${base}.jpg`)} />}
                 </div>
                 <div className="uk-card-body">
                     <h3 className="uk-card-title"> { name }</h3>
@@ -77,12 +100,6 @@ class PersonCard extends React.Component<{person: Person}> {
                 </div>
             </div>
         </div>;
-    }
-    
-    /* gets the base name of the image to use for this person */
-    static getBaseName({name}: Person): string {
-        const parts = name.split(/\s/).filter(p => !p.endsWith("."));
-        return parts.map(p => p.replace(/[^\x20-\x7E]+/g, '_')).join('_');
     }
 }
 
@@ -113,11 +130,16 @@ class FormerText extends React.Component<{person: FormerBoardMember, index: numb
 
 
 export const getStaticProps: GetStaticProps = async (context) => {
-    const board: BoardComposition = getComposition();
-    const advisors: Array<Person> = getAdvisors();
-    const formers: Array<FormerBoardMember> = getFormerMembers();
+
+    const points = await getTimePoints();
+    const [instance, prev_instance] = points;
+    const up_to_date_instance = points[0];
+    
+    const board = await getCompositionAt(instance);
+    const advisors = await getAdvisorsAt(instance);
+    const formers = await getFormerMembersAt(instance);
 
     return {
-        props: { board, advisors, formers },
+        props: { board, advisors, formers, instance, prev_instance, up_to_date_instance },
     }
 }
