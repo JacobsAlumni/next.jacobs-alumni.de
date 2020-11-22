@@ -117,7 +117,7 @@ class FormerText extends React.Component<{person: FormerBoardMember, index: numb
                             {roles.map(({role, from, to}) => <li key={`${role}-${from}-${to}`}>
                                 {englishNames[role]}
                                 {" "}
-                                {from === to ? `${from}` : `${from} - ${to}`}
+                                {from === to ? `${formatTimePoint(from)}` : `${formatTimePoint(from)} - ${formatTimePoint(to)}`}
                             </li>)}
                             {roles.length === 1 && <li>&nbsp;</li>}
                         </ul>
