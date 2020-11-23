@@ -1,8 +1,8 @@
 import advisors from "./advisors.json";
 import { Advisor, BoardMember, FormerBoardMember, TimePoint } from "./model";
 import reduce, {getTimePoints as getStatePoints, reality} from "alumni-board-state-model";
-import { State } from "alumni-board-state-model/src/state";
-import { BoardRole } from "alumni-board-state-model/src/roles";
+import { State } from "alumni-board-state-model/dist/state";
+import { BoardRole } from "alumni-board-state-model/dist/roles";
 
 function getStateAt(point: TimePoint): State {
     return reduce(reality.default, undefined, point);

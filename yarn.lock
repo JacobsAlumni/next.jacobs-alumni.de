@@ -1514,9 +1514,9 @@ ally.js@1.4.1:
     css.escape "^1.5.0"
     platform "1.3.3"
 
-"alumni-board-state-model@https://github.com/JacobsAlumni/alumni-board-state-model#v0.0.5":
+"alumni-board-state-model@https://github.com/JacobsAlumni/alumni-board-state-model#v0.0.8":
   version "0.0.4"
-  resolved "https://github.com/JacobsAlumni/alumni-board-state-model#7b383f20b0194759787de2601a9c33cdf4895785"
+  resolved "https://github.com/JacobsAlumni/alumni-board-state-model#7226772c90115de9c77db31e718db3128192a299"
   dependencies:
     moment "^2.29.1"
 
