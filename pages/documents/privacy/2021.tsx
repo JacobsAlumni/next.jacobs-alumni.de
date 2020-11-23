@@ -4,12 +4,12 @@ import Link from "next/link";
 
 export default class English extends React.Component {
     render() {
-        return <Layout title="Privacy Policy (valid from 15th August 2020)" noCopy>
+        return <Layout title="Privacy Policy (valid from 1st of January 2021)" noCopy>
             <div className="uk-alert-success" uk-alert="">
                 <a className="uk-alert-close" uk-close=""></a>
                 <p>
                     This policy comes into effect on the 1st of January 2021.
-                    Please see <Link href="/documents/privacy/2019/"><a>the privacy policy valid before this date</a></Link>.
+                    Please see <Link href="/documents/privacy/2020/"><a>the privacy policy valid before this date</a></Link>.
                 </p>
             </div>
 
@@ -136,6 +136,13 @@ export default class English extends React.Component {
                     <ul>
                         <li>Credit Card Number, expiration date and CVC or;</li>
                         <li>SEPA Bank Account Number (BIC) And Bank Account Owner</li>
+                    </ul>
+                </li>
+                <li>Donation details, i.e.</li>
+                <li>
+                    <ul>
+                        <li>Amount donated</li>
+                        <li>Date of donation</li>
                     </ul>
                 </li>
             </ul>
