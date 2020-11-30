@@ -223,11 +223,11 @@ export default class English extends React.Component {
             </p>
 
             <ul>
-                <li>a unique customer number, so that we know who made a payment;</li>
-                <li>the time the payment was made, so we know what date to print on the receipt;</li>
-                <li>the amount paid, so we know what amount to print on the receipt;</li>
-                <li>the status of the payment, so we can determine if a payment was successful;</li>
-                <li>the currency that the payment was made in, so we can print the correct currency on the receipt;</li>
+                <li>a unique customer number, so that we know who made a payment; and</li>
+                <li>the time the payment was made, so we know what date to print on the receipt; and</li>
+                <li>the amount paid, so we know what amount to print on the receipt; and</li>
+                <li>the status of the payment, so we can determine if a payment was successful; and</li>
+                <li>the currency that the payment was made in, so we can print the correct currency on the receipt.</li>
             </ul>
 
             <p>
