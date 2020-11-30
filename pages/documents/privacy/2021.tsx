@@ -209,7 +209,7 @@ export default class English extends React.Component {
             </ul>
 
             <p>
-                The payment details are submitted directly from your browser to Stripe Inc. and the payment details are never stored by Jacobs University Alumni.
+                The payment details are submitted directly from your browser to Stripe Inc. and are never stored by us.
             </p>
 
             <h4>Data Received</h4>
