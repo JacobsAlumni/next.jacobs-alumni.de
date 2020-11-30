@@ -3,7 +3,7 @@ import Img from "react-optimized-image";
 import Scholarship1 from "../../data/images/homecoming/scholarship1.png";
 import Scholarship2 from "../../data/images/homecoming/scholarship2.png";
 import DonateDetails from "../../data/images/homecoming/donate_details.png";
-import Donate from "../../data/images/homecoming/donate.png";
+import Paypal from "../../data/images/paypal.png";
 import Layout from "../../lib/layout/index";
 import { YouTubeEmbed } from "../../lib/youtube";
 import styles from "./2020.module.css";
@@ -64,7 +64,7 @@ export default class Homecoming2020 extends React.Component {
                             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
                                 <input type="hidden" name="cmd" value="_s-xclick" />
                                 <input type="hidden" name="hosted_button_id" value="3BMMTLGA99298" />
-                                <input type="image" src={Donate as unknown as string} width="200" height="60" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                                <input type="image" src={Paypal as unknown as string} width="200" height="60" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
                             </form>
                             </p>
                             <p>
