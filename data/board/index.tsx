@@ -57,7 +57,7 @@ export type TimePoint = string;
 
 /* gets the critical time points at which composition changes ordered descendingly */
 export async function getTimePoints(): Promise<Array<TimePoint>> {
-    return ["2020", "2019", "2018", "2017"]; // TODO: This is just for testsing
+    return ["2020"];
 }
 
 /* formats a time-point in human readable form */
