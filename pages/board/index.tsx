@@ -33,12 +33,18 @@ export default class Board extends React.Component<BoardProps>{
         const title = is_current ? "Board" : `Board from ${formatTimePoint(instance)} to ${formatTimePoint(next_instance)}`;
         const verbs = is_current ? "is" : `from ${formatTimePoint(instance)} to ${formatTimePoint(next_instance)} was`;
 
-        return <Layout title={title}>
-            <div className="uk-button-group">
+        let controls: React.ReactChild | undefined = undefined;
+        if(prev_instance || next_instance) {
+            controls = <div className="uk-button-group">
                 {next_instance && <Link href={next_instance === up_to_date_instance ? `/board/` : `/board/${next_instance}/`}><a className="uk-button uk-button-default" title="Next Board Composition">&laquo; {formatTimePoint(next_instance)}</a></Link>}
                 <button className="uk-button uk-button-default" disabled>{formatTimePoint(instance)}</button>
                 {prev_instance && <Link href={`/board/${prev_instance}/`}><a className="uk-button uk-button-default" title="Previous Board Composition">{formatTimePoint(prev_instance)} &raquo;</a></Link>}
-            </div>
+            </div>;
+        }
+
+
+        return <Layout title={title}>
+            { controls }
             
             <p className="uk-text-lead">
                 The board {verbs} composed of {board.length} members and {advisors.length} advisors.
@@ -132,7 +138,8 @@ class FormerText extends React.Component<{person: FormerBoardMember, index: numb
 export const getStaticProps: GetStaticProps = async (context) => {
 
     const points = await getTimePoints();
-    const [instance, prev_instance] = points;
+    const [instance, prev_instance_u] = points;
+    const prev_instance = (typeof prev_instance_u === 'string') ? prev_instance_u : null;
     const up_to_date_instance = points[0];
     
     const board = await getCompositionAt(instance);

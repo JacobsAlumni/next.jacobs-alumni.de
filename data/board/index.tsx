@@ -6,7 +6,6 @@ const composition = members as Array<BoardMember>;
 import advisors from "./advisors.json";
 
 import formers from "./former_members.json";
-import Board from "../../pages/board";
 const formerMembers = formers as Array<FormerBoardMember>;
 
 export interface Person {
@@ -57,7 +56,7 @@ export type TimePoint = string;
 
 /* gets the critical time points at which composition changes ordered descendingly */
 export async function getTimePoints(): Promise<Array<TimePoint>> {
-    return ["2020", "2019"];
+    return ["2020"];
 }
 
 /* formats a time-point in human readable form */
