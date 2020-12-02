@@ -47,8 +47,8 @@ export const englishNames: Readonly<Record<BoardRole, string>> = Object.freeze({
 export const germanNames: Readonly<Record<BoardRole, string>> = Object.freeze({
     [BoardRole.President]: "Präsident",
     [BoardRole.VicePresident]: "Vizepräsident",
-    [BoardRole.Secretary]: "Schatzmeister",
-    [BoardRole.Treasurer]: "Schriftführer",
+    [BoardRole.Secretary]: "Schriftführer",
+    [BoardRole.Treasurer]: "Schatzmeister",
 
     [BoardRole.AssessorEventManagement]: "Event-Management",
     [BoardRole.AssessorFundraising]: "Spendensammlung",
