@@ -1,17 +1,17 @@
 import * as React from "react";
 import Layout from "../../../lib/layout";
 import Link from "next/link";
+import PrivacyPolicyVersion from "../../../lib/misc/PrivacyPolicyVersion";
 
 export default class English extends React.Component {
     render() {
-        return <Layout title="Privacy Policy (valid from 15th April 2019 - 15th August 2020)" noCopy>
-            <div className="uk-alert-success" uk-alert="">
-                <a className="uk-alert-close" uk-close=""></a>
-                <p>
-                    This policy came into effect on the 15th April 2019 and was replaced by a new privacy policy on 15th August 2020.
-                    Please see <Link href="/documents/privacy/2020/"><a>the privacy policy valid after this date</a></Link> and <Link href="/documents/privacy/2019/"><a>the privacy policy valid before this date</a></Link>.
-                </p>
-            </div>
+        return <Layout title="Privacy Policy (valid from 15th April 2019 - 14th August 2020)" noCopy>
+            <PrivacyPolicyVersion
+                date="15th April 2019"
+                nextDate="15th August 2020"
+                before="/documents/privacy/2018/"
+                after="/documents/privacy/2020/"
+            />
 
             <p>
                 Dear Visitors, we thank you for visiting us.
