@@ -73,9 +73,7 @@ export default class Board extends React.Component<BoardProps>{
 class PersonCard extends React.Component<{person: Person}> {
     render() {
         const { person } = this.props;
-        const { name, role, description, socials: meta } = person;
-        const { email, facebook, twitter, instagram, linkedin, github } = meta || {};
-
+        const { name, role, description, meta: { email, facebook, twitter, instagram, linkedin, github } = {} } = person;
         const base = getImageBaseName(person);
 
         return <div>
@@ -85,7 +83,6 @@ class PersonCard extends React.Component<{person: Person}> {
                 </div>
                 <div className="uk-card-body">
                     <h3 className="uk-card-title"> { name }</h3>
-                    <p className="uk-article-meta">{ role }</p>
                     <div className="alumni-socials alumni-socials-card">
                         { email && <a href={`mailto:${email}`} className="uk-icon-button bg-mediumgrey" uk-icon="mail"></a>}
                         {" "}
@@ -100,6 +97,7 @@ class PersonCard extends React.Component<{person: Person}> {
                         { github && <a href={github} className="uk-icon-button bg-github" target="_blank" rel="noreferrer noopener" uk-icon="github"></a>}
                         {" "}
                     </div>
+                    <p className="uk-article-meta">{ role }</p>
                     <div className={styles.personDescription}>
                         <Markdown children={description} />
                     </div>

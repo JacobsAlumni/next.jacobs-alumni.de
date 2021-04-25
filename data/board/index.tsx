@@ -13,7 +13,7 @@ export interface Person {
     image?: boolean; // if true, an image should be available in images/people/basename.jpg
     role: string; // human-readable role
     description: string; // description of the person
-    socials?: { // optional socials
+    meta?: { // optional socials
         email?: string
         facebook?: string
         instagram?: string
