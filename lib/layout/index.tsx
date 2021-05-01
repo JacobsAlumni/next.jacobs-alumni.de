@@ -32,8 +32,6 @@ export default class Layout extends React.Component<LayoutProps> {
                     { children }
                 </article>
             </div>
-
-            <Footer />
         </>;
     }
 }

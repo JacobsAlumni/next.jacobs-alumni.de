@@ -1,44 +1,17 @@
 [
     {
-        "title": "Home",
-        "url": "/"
+        "title": "Alumni Homepage",
+        "url": "https://jacobs-alumni.de",
+        "external": true
     },
     {
-        "title": "Board",
-        "url": "/board/"
+        "title": "Privacy Policy",
+        "url": "https://jacobs-alumni.de/privacy",
+        "external": false
     },
     {
-        "title": "Homecoming",
-        "url": "/homecoming/"
-    },
-    {
-        "title": "Chapters",
-        "url": "/chapters/"
-    },
-    {
-        "title": "Get involved",
-        "url": "/get-involved/"
-    },
-    {
-        "title": "Donate",
-        "url": "/donate/"
-    },
-    {
-        "title": "Documents",
-        "url": "/documents/"
-    },
-    {
-        "title": "FAQ",
-        "url": "/faq/"
-    },
-    {
-        "title": "Join",
-        "external": true,
-        "url": "https://portal.jacobs-alumni.de/"
-    },
-    {
-        "title": "Alumni Portal",
-        "external": true,
-        "url": "https://portal.jacobs-alumni.de/portal/"
+        "title": "Imprint",
+        "url": "https://jacobs-alumni.de/imprint",
+        "external": false
     }
 ]
