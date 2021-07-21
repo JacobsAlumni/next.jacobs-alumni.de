@@ -1,4 +1,14 @@
 {
+    "2021": {
+        "year": 2021,
+        "link": "/homecoming/2021/",
+        "dates": "18<sup>th</sup> - 25<sup>th</sup> September 2021",
+        "reunions": [
+            {"year": 2006, "age": 15},
+            {"year": 2011, "age": 10},
+            {"year": 2016, "age": 5}
+        ]
+    },
     "2020": {
         "year": 2020,
         "link": "/homecoming/2020/",
@@ -6,7 +16,7 @@
         "reunions": [
             {"year": 2005, "age": 15},
             {"year": 2010, "age": 10},
-            {"year": 2005, "age": 5}
+            {"year": 2015, "age": 5}
         ],
         "gaLink": "https://www.eventbrite.de/e/homecoming-week-2020-alumni-association-general-assembly-tickets-117472103223"
     },
